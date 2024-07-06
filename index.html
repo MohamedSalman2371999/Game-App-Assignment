@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="description" content="Game Over Sidte" />
+      <meta name="keywords" content="Game Over , موقع العاب" />
+      <meta name="author" content="AHMED MENISY" />
+      <title>Home</title>
+      <!--? ===============  FontAwesome6.2.1 Css File =============== -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--? ===============  BootStrap5.3 =============== -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <!--? ===============  Main Css File =============== -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <!-- ========== Start Fixed ========== -->
+      <!-- fa-moon   fa-sun -->
+
+      <span class="position-fixed bottom-0 end-0 m-3 z-3">
+         <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+      </span>
+      <!-- ========== End Fixed ========== -->
+
+      <nav class="navbar navbar-expand-lg nav-bg border-bottom border-dark">
+         <div class="container">
+            <h5 class="navbar-brand mb-0 text-uppercase">
+               <img src="./images/logo-sm.png" alt="logo photo" style="max-width: 40px" /> GameOver
+            </h5>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
+                  <li class="nav-item">
+                     <a role="button" class="nav-link active text-uppercase" aria-current="page" data-category="mmorpg">mmorpg</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="pvp">pvp</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase" data-category="action">action</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <main class="container my-3 home">
+         <h1 class="h4 mb-4">Top Free Moba Games For PC And Browser In 2023!</h1>
+         <section class="position-relative">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+
+            <div class="loading d-none">
+               <main>
+                  <svg class="ip" viewBox="0 0 256 128" width="256px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                     <defs>
+                        <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+                           <stop offset="0%" stop-color="#5ebd3e" />
+                           <stop offset="33%" stop-color="#ffb900" />
+                           <stop offset="67%" stop-color="#f78200" />
+                           <stop offset="100%" stop-color="#e23838" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="1" y1="0" x2="0" y2="0">
+                           <stop offset="0%" stop-color="#e23838" />
+                           <stop offset="33%" stop-color="#973999" />
+                           <stop offset="67%" stop-color="#009cdf" />
+                           <stop offset="100%" stop-color="#5ebd3e" />
+                        </linearGradient>
+                     </defs>
+                     <g fill="none" stroke-linecap="round" stroke-width="16">
+                        <g class="ip__track" stroke="#ddd">
+                           <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
+                           <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
+                        </g>
+                        <g stroke-dasharray="180 656">
+                           <path class="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0" d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
+                           <path class="ip__worm2" stroke="url(#grad2)" stroke-dashoffset="358" d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
+                        </g>
+                     </g>
+                  </svg>
+               </main> 
+            </div>
+         </section>
+      </main>
+
+      <!--! ============ BootStrap JS File ============ -->
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <!--! ============ Main Js File ============ -->
+      <script src="./js/main.js"></script>
+   </body>
+</html>
